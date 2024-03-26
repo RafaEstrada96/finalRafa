@@ -16,7 +16,7 @@ public class AlertasMensajes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        alertas.text = string.Format("<color=yellow>"+mensaje+"</color>");
+        alertas.text = string.Format("<color=red>"+mensaje+"</color>");
     }
     public void ActualizarMensaje(string nuevoMensaje)
     {

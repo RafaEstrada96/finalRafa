@@ -6,6 +6,14 @@ public class Proyectil : MonoBehaviour
 {
     public ManaCounter scriptMana;
     public int costeMana = 30;
+
+    private float tiempoDeEspera = 6f;
+
+    void Start ()
+    {
+        Destroy(gameObject, tiempoDeEspera);
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         // Verifica si el objeto colisionado está en la capa 6
